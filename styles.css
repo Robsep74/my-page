@@ -346,3 +346,15 @@ nav {
       height: auto;
     }
   }
+
+  address img {
+    width: 24px;
+    height: auto;
+    margin: 0 6px;
+  }
+  
+  @media (min-width: 768px) {
+    address img {
+      width: 30px;
+    }
+  }
