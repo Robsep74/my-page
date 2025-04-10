@@ -2,46 +2,48 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width-device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="../normalize.css" rel="stylesheet">
+<link href="../styles.css" rel="stylesheet">
 <title>Web Design</title>
 </head>
 <body>
 <header>
-  <a href="../index.html">
-    <img src="../images/logo1.png" alt="Logo">
+  <a href="../info/index.html">
   </a>
-  <hr>
-   <h1>Web Design Services</h1>
-   <hr>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a>
-          <li><a href="../info/about-me.html">About Me</a></li>
-          <li><a href="../info/my-portfolio.html">My Portfolio</a></li>
-          <li><a href="../info/my-blog.html">My blog</a></li>
-          <li><a href="../info/other-services.html">Other Services</a></li>
-      </ul>
-      <h3>Information about Color Theory:</h3>
-      <ul>
-        <li>
-          <a href="../info/color-theory.html">Color Theory Overview</a>
-      <ul>
-        <li><a href="../info/color-themes.html">Color Themes</a></li>
-        <li><a href="../info/color-article.html">Color Article</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="../info/typography-overview.html">Go to Typography </a>
-        </li>
+   <nav>
+    <ul class="main-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../info/about-me.html">About Me</a></li>
+      <li><a href="../info/my-portfolio.html">My Portfolio</a></li>
+      <li>
+        <a href="../info/my-blog.html">My Blog</a>
+        <ul class="submenu">
+          <li>
+            <a href="../info/color-theory.html">Color Theory Overview</a>
+            <ul class="submenu">
+              <li><a href="../info/color-themes.html">Color Themes</a></li>
+              <li><a href="../info/color-article.html">Color Article</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../info/typography-overview.html">Typography Overview</a>
+            <ul class="submenu">
+              <li><a href="../info/font-types-article.html">Font Types Article</a></li>
+              <li><a href="../info/typography-article.html">Typography Article</a></li>
+            </ul>
+          </li>
         </ul>
-        </li>
-        </ul>
-   </nav>
+      </li>
+      <li><a href="../info/other-services.html">Other Services</a></li>
+    </ul>
+  </nav>
 </header>
-  <main>
-    <h2>Overview:</h2>
+  <main id="color-theory">
+    <h2 class="overview-title">Overview</h2>
     <p><strong>Color Theory</strong> is the study of how colors interact, how they are perceived, and how they can be combined effectively. It is used in art, design, and marketing to create visually appealing compositions and convey emotions.</p>
     <p>Here are 20 key color theory terms along with their definitions:</p>
+    <section class="color-project">
             <h4>1- Primary Colors</h4>
     <ul>    
       <li>Red, Blue, Yellow - The three colors that cannot be created by mixing other colors.</li></ul>
@@ -104,7 +106,7 @@
                         value and dark represents the lowest value. As it shows in this next image:</li>
                     </ul>
                     <a href="../images/diego-cat.png" target="_blank">
-                        <img src="../images/diego-cat.png" width="800" alt="Example of Value"></a>
+                        <img src="../images/diego-cat.png" width="600" alt="Example of Value"></a>
                         <h4>8- Saturation.</h4>
                         <ul>
                             <li>The intensity or purity of color (high saturation = vibrant, low saturation = dull). Saturation can be defined as the degree of purity and brightness within a color:</li>
@@ -160,19 +162,19 @@
                         <li>This is an example of the color Blue in a vibrant Monochromatic blending decoration:</li>
                       </ul>
                       <a href="../images/monochroma-decor.png" target="_blank">
-                        <img src="../images/monochroma-decor.png" width="700" alt="Example of Monochromatic Blend"></a>
+                        <img src="../images/monochroma-decor.png" width="600" alt="Example of Monochromatic Blend"></a>
                         <ul>
                         <li>Another Monochromatic blend in color orange:</li>
                       </ul>
                       <a href="../images/monochroma-orange.png" target="_blank">
-                        <img src="../images/monochroma-orange.png" width="700" alt="Example of Monochromatic Blend"></a>
+                        <img src="../images/monochroma-orange.png" width="600" alt="Example of Monochromatic Blend"></a>
                       <h4>15- Color "Feeling" Mood.</h4>
                          <ul>
                           <li>Color choice has a dramatic effect on the “mood” of a project as each culture attaches a feeling or mood with various colors. 
                             However, depending on where you were raised, the color Red for example may have happy references such as people from China who feel red is lucky:</li>
                       </ul>
                       <a href="../images/color-moods.png" target="_blank">
-                        <img src="../images/color-moods.png" width="700" alt="Color Moods"></a>
+                        <img src="../images/color-moods.png" width="600" alt="Color Moods"></a>
                         <h4>16- Contrasting.</h4>
                          <ul>
                           <li>Contrasting is great to easily draw attention to one thing or another by making the hue very different. 
@@ -218,7 +220,8 @@
                                <h3>Color Theory in Web Design.</h3>
                                <p>Color theory in web design is the science and art of using colors effectively to create visually appealing, functional, and engaging websites. 
                                 It influences how users perceive a brand, navigate a website, and interact with its content. By understanding color relationships, psychological effects, and best practices, designers can create a cohesive and impactful user experience.</p>
-                               </main>
+                               </section>
+                              </main>
                             </body>
                             </html>   
 
