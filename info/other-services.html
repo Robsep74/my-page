@@ -2,41 +2,40 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width-device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../normalize.css" rel="stylesheet">
+<link href="../styles.css" rel="stylesheet">
 <title>Web Design</title>
 </head>
 <body>
 <header>
   <a href="../info/index.html">
-    <img src="../images/logo1.png" alt="Logo">
   </a>
-  <hr>
-   <h1>Web Design Services</h1>
-   <hr>
-  <nav>
-    <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../info/about-me.html">About Me</a></li>
-          <li><a href="../info/my-portfolio.html">My Portfolio</a></li>
-          <li><a href="../info/my-blog.html">My blog</a></li>
-          <li><a href="../info/other-services.html">Other Services</a></li>
-      </ul>
-      <h3>Topics of Interest:</h3>
-      <ul>
-        <li>
-          <a href="../info/color-theory.html">Color Theory Overview</a>
-      <ul>
-        <li><a href="../info/color-themes.html">Color Themes</a></li>
-        <li><a href="../info/color-article.html">Color Article</a></li>
-       </ul>
+   <nav>
+    <ul class="main-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../info/about-me.html">About Me</a></li>
+      <li><a href="../info/my-portfolio.html">My Portfolio</a></li>
+      <li>
+        <a href="../info/my-blog.html">My Blog</a>
+        <ul class="submenu">
+          <li>
+            <a href="../info/color-theory.html">Color Theory Overview</a>
+            <ul class="submenu">
+              <li><a href="../info/color-themes.html">Color Themes</a></li>
+              <li><a href="../info/color-article.html">Color Article</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../info/typography-overview.html">Typography Overview</a>
+            <ul class="submenu">
+              <li><a href="../info/font-types-article.html">Font Types Article</a></li>
+              <li><a href="../info/typography-article.html">Typography Article</a></li>
+            </ul>
+          </li>
+        </ul>
       </li>
-        <li>
-          <a href="../info/typography-overview.html">Typography Overview</a>
-      <ul>
-        <li><a href="../info/font-types-article.html">Font Types Article</a></li>
-        <li><a href="../info/typography-article.html">Typography Article</a></li>
-      </ul>
-    </li>
+      <li><a href="../info/other-services.html">Other Services</a></li>
     </ul>
   </nav>
 </header>

@@ -2,58 +2,57 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width-device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../normalize.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap" rel="stylesheet">
 <title>Web Design</title>
 </head>
 <body>
 <header>
   <a href="info/index.html">
-    <img src="images/logo1.png" alt="Logo">
   </a>
-  <hr>
-   <h1>Web Design Services</h1>
-   <hr>
-  <nav>
-    <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="info/about-me.html">About Me</a></li>
-          <li><a href="info/my-portfolio.html">My Portfolio</a></li>
-          <li><a href="info/my-blog.html">My blog</a></li>
-          <li><a href="info/other-services.html">Other Services</a></li>
-      </ul>
-      <h3>Topics of Interest:</h3>
-      <ul>
-        <li>
-          <a href="info/color-theory.html">Color Theory Overview</a>
-      <ul>
-        <li><a href="info/color-themes.html">Color Themes</a></li>
-        <li><a href="info/color-article.html">Color Article</a></li>
-       </ul>
+   <nav>
+    <ul class="main-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info/about-me.html">About Me</a></li>
+      <li><a href="info/my-portfolio.html">My Portfolio</a></li>
+      <li>
+        <a href="info/my-blog.html">My Blog</a>
+        <ul class="submenu">
+          <li>
+            <a href="info/color-theory.html">Color Theory Overview</a>
+            <ul class="submenu">
+              <li><a href="info/color-themes.html">Color Themes</a></li>
+              <li><a href="info/color-article.html">Color Article</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="info/typography-overview.html">Typography Overview</a>
+            <ul class="submenu">
+              <li><a href="info/font-types-article.html">Font Types Article</a></li>
+              <li><a href="info/typography-article.html">Typography Article</a></li>
+            </ul>
+          </li>
+        </ul>
       </li>
-        <li>
-          <a href="info/typography-overview.html">Typography Overview</a>
-      <ul>
-        <li><a href="info/font-types-article.html">Font Types Article</a></li>
-        <li><a href="info/typography-article.html">Typography Article</a></li>
-      </ul>
-    </li>
+      <li><a href="info/other-services.html">Other Services</a></li>
     </ul>
   </nav>
 </header>
   <main>
-      <p><strong>Hello, Friends!</strong></p>
-      <p>Welcome to Your Web Design Services</p>
+    <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo"> Your Web Design Services</span></p>
   <section id="about-me">
-    <h2>About Me</h2>
+    <h3>Creative Website Designs</h3>
     <a href="info/about-me.html"></a>
-    <img src="images/luis.png" width="200" alt="My Photo">
-  <p>Luis R. Sepulveda provides Web Designing Services in the San Antonio, Texas area...
+    <img src="images/web-design-pic.jpeg" width="700" alt="My Photo">
+  <p>Crafting clean, modern websites tailored to your vision. Your brand deserves a beautiful online home — let's build it.
     <a href="info/about-me.html">Read more...</a>
   </p>
 <article id="my-portfolio">
   <h2>My Portfolio</h2>
   <a href="info/my-portfolio.html">
-    <img src="images/collage-images.png" width="200" alt="Portfolio Image">
+    <img src="images/collage-images.png" width="600" alt="Portfolio Image">
   </a>
   <p>Here you can see some of my work in Web Design, Social Media Ads...
     <a href="./info/my-portfolio.html">Read more...</a>
@@ -63,16 +62,15 @@
   <h2>Other Services</h2>
   <p>Besides Web Design, I also provide the following services:</p>
   <ol>
-    <li><strong>Social Media Advertisment.</strong></li>
+    <li><strong>Social Media Advertisement.</strong></li>
     <li><strong>Professional Video Editing & Translation.</strong></li>
     <li><strong>Old Photograph Restoration.</strong></li>
   </ol>
   <aside>
     <h3>My Blog</h3>
     <p>Check out my Blog with intersting information about my projects and more.</p>
-      <h4>Coming Soon</h4>
+      <h4>Coming Soon!</h4>
   </aside>
-  <p><small>Disclosure: This is a test website.</small></p>
 </main>
 <footer>
   <p>&copy; 2024 Web Design Services. All rights reserved.</p>

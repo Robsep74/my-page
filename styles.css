@@ -1,0 +1,349 @@
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header, nav {
+  width: 100%;
+  max-width: none;
+}
+
+body {
+  background: aliceblue;
+  background-image: url('../images/robbie-ross.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  background: rgba(232, 238, 245, 0.6);
+  width: 98%;
+  margin: auto;
+  width: 100%;
+  max-width: 800px; 
+  margin: 30px auto; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+  text-align: center; 
+}
+
+.custom-welcome {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8em;
+  color: #003366;
+  text-decoration: underline;
+}
+
+.inline-logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+  width: 100px;
+  max-height: 2em;
+  margin: 0 8px; 
+}
+
+#about-me h3 {
+  color: #003366;
+}
+
+nav {
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center; 
+  margin-top: 16px;
+  width: 100%;
+  background-color: rgba(217, 227, 248, 0.6);
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+  border-bottom: 2px solid #9fa2ab;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  nav ul.main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .main-nav > li {
+    display: block;
+    margin: 12px 0;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+  }
+
+  li:hover > .submenu {
+    display: block;
+  }
+}
+  .submenu .submenu {
+    position: static;
+    display: block;
+    margin-top: 10px;
+    left: auto;
+    top: auto;
+  }
+
+  .submenu li {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    margin: 2px 0;
+    border-radius: 5px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-nav > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    color: #333;
+    background-color: #d9e3f8;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  nav a:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  nav a:hover {
+    background-color: #c0d1f5;
+  }
+  
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: calc(100% - 20px); 
+    background-color: #d9e3f8;
+    padding: 6px;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 999;
+  }
+  
+  li:hover > .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    position: relative;
+  }
+  
+  .submenu .submenu {
+    top: 0;
+    left: 100%;
+    font-size: 14px;
+    display: none;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li {
+    font-family: Helvetica, Geneva, Arial;
+  }
+  
+  h2 {
+    font-family: Geneva, Helvetica, Arial;
+  }
+
+  h3 {
+    font-family: Futura;
+  }
+
+  h4 {
+    font-family: Geneva, Arial;
+  }
+
+  a[href^="http"] {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a[href^="http"]:hover {
+    color: #cc0000;
+    text-decoration: none;
+  }
+  
+  a[href^="http"]:active {
+    color: #990000;
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  rgb(217, 232, 248, 0.4);
+    margin-top: 40px; 
+  }
+  
+  footer address a {
+    margin: 0 10px; 
+    display: inline-block;
+  }
+  
+  footer img {
+    width: 24px; 
+    vertical-align: middle;
+    box-shadow: 0 -4px 6px rgba(1, 1, 1, 0.1);
+  }
+
+  ul, ol {
+    list-style: none; 
+    padding-left: 0;   
+    margin-left: 0;    
+  }
+
+  img {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);  
+    transition: all 0.3s ease; 
+  }
+  
+  
+  img:hover {
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.3);  
+    transform: translateY(-4px); 
+  }
+
+  #portfolio {
+    background-color: rgba(255, 255, 255, 0.50);
+    font-family: 'Georgia', serif;
+    padding: 40px 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #portfolio h1 {
+    font-size: 36px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  #portfolio h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-projects img {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-projects img:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-projects p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  #color-theory h2 {
+    font-family: 'Georgia', serif;
+  }
+
+  .overview-title {
+    text-decoration: underline;
+  }
+
+  #color-theory {
+    font-family: 'Georgia', serif;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding: 40px;
+  }
+  
+  #color-theory .color-project {
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .color-project h4 {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+  }
+
+  #typography h2 {
+    text-decoration: underline;
+    font-family: 'Georgia', serif;
+  }
+
+  #typography h4 {
+    font-family: 'Georgia', serif;
+  }
+
+  #typography .typography-overview {
+    background: rgba(255, 255, 255, 0.60);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+  
+    h1, h2, h3, h4 {
+      font-size: 1.2em;
+    }
+  
+    p, li {
+      font-size: 1em;
+    }
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
