@@ -352,3 +352,57 @@ address img {
     width: 30px;
   }
 }
+
+/* ===== Theme Modes ===== */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+/* Optional: Adjust other elements for dark mode */
+body.dark-mode main {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: rgba(40, 40, 40, 0.7);
+}
+
+body.dark-mode a {
+  color: #90caf9;
+}
+
+/* ===== Font Size Options ===== */
+body.font-small {
+  font-size: 14px;
+}
+
+body.font-medium {
+  font-size: 16px;
+}
+
+body.font-large {
+  font-size: 18px;
+}
+
+.chevron {
+  display: inline-block;
+  margin-left: 6px;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate chevron when dropdown is open */
+.dropdown.open > a .chevron {
+  transform: rotate(-135deg);
+}
