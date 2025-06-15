@@ -116,5 +116,13 @@
                           <p>See Article about Colors</p>
                       </a>                  
                         </main>
+                        <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
                     </body>
                   </html>

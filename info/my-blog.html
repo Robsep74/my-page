@@ -37,5 +37,13 @@
       <h2>Coming Soon!</h2>
         <h3>This Blog is not available right now. It will be once it's completed. </h3>
         </main>
+        <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
       </body>
      </html>
