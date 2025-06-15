@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="normalize.css" rel="stylesheet">
-<link href="styles.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap" rel="stylesheet">
-<title>Web Design</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="normalize.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap" rel="stylesheet" />
+  <title>Web Design</title>
 </head>
 <body>
-<header>
-  <a href="info/index.html">
-  </a>
-   <nav>
-  <ul class="main-nav">
-    <li><a href="/my-page/index.html">Home</a></li>
-    <li><a href="/my-page/info/about-me.html">About Me</a></li>
-    <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
-    <li class="dropdown">
-      <a href="#">Showcase</a>
-      <ul class="submenu">
-        <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
-        <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
-        <li><a href="/my-page/info/color-article.html">Color Article</a></li>
-        <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
-        <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
-        <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+  <header>
+    <a href="info/index.html"></a>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="/my-page/index.html">Home</a></li>
+        <li><a href="/my-page/info/about-me.html">About Me</a></li>
+        <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
+        <li class="dropdown">
+          <a href="#">Showcase<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
+            <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
+            <li><a href="/my-page/info/color-article.html">Color Article</a></li>
+            <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
+            <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
+            <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+          </ul>
+        </li>
+        <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
+        <li><a href="/my-page/info/other-services.html">Other Services</a></li>
+        <li class="dropdown">
+          <a href="#">Theme<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="#" onclick="setTheme('light')">Light Mode</a></li>
+            <li><a href="#" onclick="setTheme('dark')">Dark Mode</a></li>
+            <li><a href="#" onclick="setFontSize('small')">Font: Small</a></li>
+            <li><a href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
+            <li><a href="#" onclick="setFontSize('large')">Font: Large</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
-    <li><a href="/my-page/info/other-services.html">Other Services</a></li>
-  </ul>
-</nav>
-</nav>
-</header>
+    </nav>
+  </header>
+
   <main>
-    <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo"> Your Web Design Services</span></p>
-  <section id="about-me">
-    <h3>Creative Website Designs</h3>
-    <a href="info/about-me.html"></a>
-    <img src="images/web-design-pic.jpeg" width="700" alt="My Photo">
-  <p>Crafting clean, modern websites tailored to your vision. Your brand deserves a beautiful online home — let's build it.
-    <a href="info/about-me.html">Read more...</a>
-  </p>
-<article id="my-portfolio">
-  <h2>My Portfolio</h2>
-  <a href="info/my-portfolio.html">
-    <img src="images/collage-images.png" width="600" alt="Portfolio Image">
-  </a>
-  <p>Here you can see some of my work in Web Design, Social Media Ads...
-    <a href="./info/my-portfolio.html">Read more...</a>
-  </p>
-  </article>
-</section>
-  <h2>Other Services</h2>
-  <p>Besides Web Design, I also provide the following services:</p>
-  <ol>
-    <li><strong>Social Media Advertisement.</strong></li>
-    <li><strong>Professional Video Editing & Translation.</strong></li>
-    <li><strong>Old Photograph Restoration.</strong></li>
-  </ol>
-  <aside>
-    <h3>My Blog</h3>
-    <p>Check out my Blog with intersting information about my projects and more.</p>
+    <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo" /> Your Web Design Services</span></p>
+
+    <section id="about-me">
+      <h3>Creative Website Designs</h3>
+      <img src="images/web-design-pic.jpeg" width="700" alt="My Photo" />
+      <p>Crafting clean, modern websites tailored to your vision. Your brand deserves a beautiful online home — let's build it. <a href="info/about-me.html">Read more...</a></p>
+
+      <article id="my-portfolio">
+        <h2>My Portfolio</h2>
+        <a href="info/my-portfolio.html"><img src="images/collage-images.png" width="600" alt="Portfolio Image" /></a>
+        <p>Here you can see some of my work in Web Design, Social Media Ads... <a href="./info/my-portfolio.html">Read more...</a></p>
+      </article>
+    </section>
+
+    <h2>Other Services</h2>
+    <p>Besides Web Design, I also provide the following services:</p>
+    <ol>
+      <li><strong>Social Media Advertisement.</strong></li>
+      <li><strong>Professional Video Editing & Translation.</strong></li>
+      <li><strong>Old Photograph Restoration.</strong></li>
+    </ol>
+
+    <aside>
+      <h3>My Blog</h3>
+      <p>Check out my Blog with interesting information about my projects and more.</p>
       <h4>Coming Soon!</h4>
-  </aside>
-</main>
-<footer>
-  <p>&copy; 2024 Web Design Services. All rights reserved.</p>
-  <h3>E-Mail & Links</h3>
-  <address>
-    <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
-    <a href="https://www.facebook.com/roberto.sepulveda.75">
-      <img src="images/fb-icon.png" alt="Facebook Icon"></a>
-      <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/">
-      <img src="images/linkedin-icon-.png" alt="LinkedIn Icon"></a>
-      <a href="https://x.com/gilbarwaters">
-      <img src="images/twitter-icon-.png" alt="Twitter Icon"></a>
-  </address>
-</footer>
-<script>
-  document.querySelectorAll('.dropdown > a').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentElement.classList.toggle('open');
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Web Design Services. All rights reserved.</p>
+    <h3>E-Mail & Links</h3>
+    <address>
+      <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
+      <a href="https://www.facebook.com/roberto.sepulveda.75"><img src="images/fb-icon.png" alt="Facebook Icon" /></a>
+      <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/"><img src="images/linkedin-icon-.png" alt="LinkedIn Icon" /></a>
+      <a href="https://x.com/gilbarwaters"><img src="images/twitter-icon-.png" alt="Twitter Icon" /></a>
+    </address>
+  </footer>
+
+  <script>
+    // Dropdown toggles
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
     });
-  });
-</script>
+
+    // Theme toggles
+    function setTheme(mode) {
+      document.body.classList.remove('light-mode', 'dark-mode');
+      document.body.classList.add(`${mode}-mode`);
+    }
+
+    function setFontSize(size) {
+      document.body.classList.remove('font-small', 'font-medium', 'font-large');
+      document.body.classList.add(`font-${size}`);
+    }
+  </script>
 </body>
 </html>

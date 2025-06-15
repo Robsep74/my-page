@@ -12,25 +12,35 @@
   <a href="../info/index.html">
   </a>
    <nav>
-  <ul class="main-nav">
-    <li><a href="/my-page/index.html">Home</a></li>
-    <li><a href="/my-page/info/about-me.html">About Me</a></li>
-    <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
-    <li class="dropdown">
-      <a href="#">Showcase</a>
-      <ul class="submenu">
-        <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
-        <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
-        <li><a href="/my-page/info/color-article.html">Color Article</a></li>
-        <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
-        <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
-        <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+      <ul class="main-nav">
+        <li><a href="/my-page/index.html">Home</a></li>
+        <li><a href="/my-page/info/about-me.html">About Me</a></li>
+        <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
+        <li class="dropdown">
+          <a href="#">Showcase<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
+            <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
+            <li><a href="/my-page/info/color-article.html">Color Article</a></li>
+            <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
+            <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
+            <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+          </ul>
+        </li>
+        <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
+        <li><a href="/my-page/info/other-services.html">Other Services</a></li>
+        <li class="dropdown">
+          <a href="#">Theme<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="#" onclick="setTheme('light')">Light Mode</a></li>
+            <li><a href="#" onclick="setTheme('dark')">Dark Mode</a></li>
+            <li><a href="#" onclick="setFontSize('small')">Font: Small</a></li>
+            <li><a href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
+            <li><a href="#" onclick="setFontSize('large')">Font: Large</a></li>
+          </ul>
+        </li>
       </ul>
-    </li>
-    <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
-    <li><a href="/my-page/info/other-services.html">Other Services</a></li>
-  </ul>
-</nav>
+    </nav>
 </header>
   <main>
     <h2>Typography: A Journey Through Its History and Importance.</h2>
@@ -117,12 +127,24 @@
                       </a>                  
                         </main>
                         <script>
-  document.querySelectorAll('.dropdown > a').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentElement.classList.toggle('open');
+    // Dropdown toggles
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
     });
-  });
-</script>
-                    </body>
-                  </html>
+
+    // Theme toggles
+    function setTheme(mode) {
+      document.body.classList.remove('light-mode', 'dark-mode');
+      document.body.classList.add(`${mode}-mode`);
+    }
+
+    function setFontSize(size) {
+      document.body.classList.remove('font-small', 'font-medium', 'font-large');
+      document.body.classList.add(`font-${size}`);
+    }
+  </script>
+   </body>
+  </html>
