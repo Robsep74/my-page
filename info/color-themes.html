@@ -92,6 +92,14 @@
             For example, Coca-Cola uses red to signify energy, excitement, and boldness, while Starbucks uses green to evoke feelings of calm, growth, and sustainability.
             The right color theme strengthens your brand's image and makes your website or product more memorable.</p>
             </main>
+            <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
             </body>
             </html>
           

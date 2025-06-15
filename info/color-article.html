@@ -91,5 +91,13 @@
       Some sections use light gray backgrounds with black text, which reduces readability, especially for long articles. There are too many banner ads, autoplay videos, and pop-ups, which disrupt the reading experience.
       These elements cause visual noise, making it hard to differentiate between genuine news content and sponsored content.</p>
     </main>
+    <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
   </body>
 </html>

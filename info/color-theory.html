@@ -215,6 +215,14 @@
                                 It influences how users perceive a brand, navigate a website, and interact with its content. By understanding color relationships, psychological effects, and best practices, designers can create a cohesive and impactful user experience.</p>
                                </section>
                               </main>
+                              <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
                             </body>
                             </html>   
 

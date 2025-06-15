@@ -29,6 +29,10 @@
 </li>
 <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
 <li><a href="/my-page/info/other-services.html">Other Services</a></li>
+  </ul>
+</li>
+<li><a href="/my-page/info/my-blog.html">My Blog</a></li>
+<li><a href="/my-page/info/other-services.html">Other Services</a></li>
     </ul>
   </nav>
 </header>
@@ -128,6 +132,14 @@
                                         Selah Creative Co.</a>
                                         </section>
                                     </main>
+                                    <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
                                 </body>
                             </html>
                             

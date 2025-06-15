@@ -157,5 +157,13 @@
                 </ul>
                 <p>By understanding different font types and their applications, you can make informed design choices that enhance readability and aesthetics. The right typography can transform a simple text into a powerful visual statement!</p>
             </main>
+            <script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
           </body>
        </html>
