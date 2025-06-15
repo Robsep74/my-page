@@ -13,32 +13,26 @@
   <a href="info/index.html">
   </a>
    <nav>
-    <ul class="main-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="info/about-me.html">About Me</a></li>
-      <li><a href="info/my-portfolio.html">My Portfolio</a></li>
-      <li>
-        <a href="info/my-blog.html">My Blog</a>
-        <ul class="submenu">
-          <li>
-            <a href="info/color-theory.html">Color Theory Overview</a>
-            <ul class="submenu">
-              <li><a href="info/color-themes.html">Color Themes</a></li>
-              <li><a href="info/color-article.html">Color Article</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="info/typography-overview.html">Typography Overview</a>
-            <ul class="submenu">
-              <li><a href="info/font-types-article.html">Font Types Article</a></li>
-              <li><a href="info/typography-article.html">Typography Article</a></li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="info/other-services.html">Other Services</a></li>
-    </ul>
-  </nav>
+  <ul class="main-nav">
+    <li><a href="/my-page/index.html">Home</a></li>
+<li><a href="/my-page/info/about-me.html">About Me</a></li>
+<li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
+<li class="dropdown">
+  <a href="#">Showcase</a>
+  <ul class="submenu">
+    <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
+    <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
+    <li><a href="/my-page/info/color-article.html">Color Article</a></li>
+    <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
+    <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
+    <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+  </ul>
+</li>
+<li><a href="/my-page/info/my-blog.html">My Blog</a></li>
+<li><a href="/my-page/info/other-services.html">Other Services</a></li>
+
+  </ul>
+</nav>
 </header>
   <main>
     <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo"> Your Web Design Services</span></p>
@@ -85,5 +79,13 @@
       <img src="images/twitter-icon-.png" alt="Twitter Icon"></a>
   </address>
 </footer>
+<script>
+  document.querySelectorAll('.dropdown > a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
 </body>
 </html>
