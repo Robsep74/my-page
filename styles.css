@@ -55,7 +55,7 @@ nav {
   text-align: center; 
   margin-top: 16px;
   width: 100%;
-  background-color: rgba(217, 227, 248, 0.6);
+  background-color: rgba(196, 211, 243, 0.6);
   padding: 10px 0;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
@@ -84,9 +84,9 @@ nav a {
   padding: 10px 15px;
   display: inline-block;
   color: #333;
-  background-color: #d9e3f8;
+  background-color: #d2dbf1;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #a8a8a8;
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease;
 }
@@ -369,9 +369,18 @@ body.dark-mode main {
   background: rgba(30, 30, 30, 0.8);
 }
 
+/* Dark Mode Navbar and Submenu Styling */
+body.dark-mode nav {
+  background-color: rgba(30, 30, 30, 0.9); /* dark background for navbar */
+  border-bottom: 2px solid #444;
+}
+
 body.dark-mode nav,
-body.dark-mode footer {
-  background-color: rgba(40, 40, 40, 0.7);
+body.dark-mode nav a,
+body.dark-mode .submenu li {
+  background-color: rgba(217, 227, 248, 0.6);
+  color: #000000;
+  border: 1px solid #6e6e6e;
 }
 
 body.dark-mode a {
@@ -422,4 +431,29 @@ body.font-large {
 /* Rotate chevron down when dropdown is open */
 .dropdown.open > a .chevron {
   transform: translateY(-50%) rotate(135deg); /* down arrow */
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+/* This overrides link color in dark mode */
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode a:hover {
+  color: #cccccc;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode .submenu li:hover {
+  background-color: #444;
+  color: #ffffff;
+}
+
+body.dark-mode nav {
+  background-color: rgba(30, 30, 30, 0.8); /* Dark nav background */
+  border-bottom: 2px solid #555; /* Subtle dark border */
 }
