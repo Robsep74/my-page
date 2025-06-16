@@ -103,7 +103,7 @@
             The right color theme strengthens your brand's image and makes your website or product more memorable.</p>
             </main>
             <script>
-    // Load theme from localStorage
+  // Load saved theme and font size on page load
   document.addEventListener("DOMContentLoaded", function () {
     const savedTheme = localStorage.getItem("theme");
     const savedFont = localStorage.getItem("fontSize");
@@ -117,25 +117,26 @@
     }
   });
 
-// Theme toggles
-    function setTheme(mode) {
-      document.body.classList.remove('light-mode', 'dark-mode');
-      document.body.classList.add(`${mode}-mode`);
-    }
+  function setTheme(mode) {
+    document.body.classList.remove("light-mode", "dark-mode");
+    document.body.classList.add(`${mode}-mode`);
+    localStorage.setItem("theme", mode);  // Save selection
+  }
 
-    function setFontSize(size) {
-      document.body.classList.remove('font-small', 'font-medium', 'font-large');
-      document.body.classList.add(`font-${size}`);
-    }
+  function setFontSize(size) {
+    document.body.classList.remove("font-small", "font-medium", "font-large");
+    document.body.classList.add(`font-${size}`);
+    localStorage.setItem("fontSize", size);  // Save selection
+  }
 
-    // Dropdown toggles
-    document.querySelectorAll('.dropdown > a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
+  // Enable dropdown toggle
+  document.querySelectorAll(".dropdown > a").forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("open");
     });
-  </script>
+  });
+</script>
   </body>
   </html>
           
