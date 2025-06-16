@@ -480,3 +480,8 @@ body.dark-mode p,
 body.dark-mode li {
   color: #ffffff !important;
 }
+
+body.dark-mode #portfolio h1,
+body.dark-mode #portfolio h4 {
+  color: #ffffff;
+}
