@@ -457,3 +457,16 @@ body.dark-mode nav {
   background-color: rgba(30, 30, 30, 0.8); /* Dark nav background */
   border-bottom: 2px solid #3e3e3e; /* Subtle dark border */
 }
+
+body.dark-mode #color-theory,
+body.dark-mode #portfolio,
+body.dark-mode #about-me {
+  background-color: rgba(30, 30, 30, 0.8); /* Dark background */
+  color: #ffffff; /* Optional: ensure text turns white */
+}
+
+body.dark-mode #portfolio p,
+body.dark-mode #color-theory p,
+body.dark-mode #about-me p {
+  color: #eeeeee; /* Lighten paragraph text if needed */
+}
