@@ -49,70 +49,126 @@
     </nav>
 </header>
     <main id="about-me">
-      <h2 style="color: #003366;font-family: 'Outfit', sans-serif; font-size: 1.6rem;">About Me</h2>
-          <a href="../images/luis.png" target="_blank">
-        <img src="../images/luis.png" width="200" alt="My Photo">
-        </a>
+  <h2 style="color: #003366; font-family: 'Outfit', sans-serif; font-size: 1.6rem;">About Me</h2>
+  <a href="../images/luis.png" target="_blank">
+    <img src="../images/luis.png" width="200" alt="My Photo">
+  </a>
+
+  <section class="collapsible-section">
+    <button class="collapsible-toggle">About the Designer <span class="chevron"></span></button>
+    <div class="collapsible-content">
       <p>Luis Roberto Sepulveda provides Web Designing Services in the San Antonio, Texas area.</p>
       <p>He is currently specializing in Web Design through the UTSA San Antonio online course offered by Webucator.</p>
       <p>Mr. Sepulveda goes by his middle name, Roberto, or Robert. He moved to San Antonio, Texas, in 1999
         to work in the natural stone industry, where he got involved in different departments within
         the company and developed a wealth of knowledge from customer service, sales, project management,
         production, installation, and quality control.</p>
+    </div>
+  </section>
+
+  <section class="collapsible-section">
+    <button class="collapsible-toggle">Work Experience <span class="chevron"></span></button>
+    <div class="collapsible-content">
       <p>Roberto was also involved in the marketing department, creating brochures and promoting
         the company's products. He is familiar with computer programs such as Power Point, GIMP, and Photoshop,
-        as well as other office-related softwares like Excel and AutoCad.
-        These days, he is focus on pursuing his passion for web design and web development, and he will
-        be ready to offer his services soon.</p>
-      <p>You can visit his social media or send him an e-mail to contact him for more information.</p>
-      <h3>E-Mail & Links</h3>
+        as well as other office-related softwares like Excel and AutoCad.</p>
+    </div>
+  </section>
+
+  <section class="collapsible-section">
+    <button class="collapsible-toggle">Skills <span class="chevron"></span></button>
+    <div class="collapsible-content">
+      <p>These days, he is focused on pursuing his passion for web design and development. He is ready to offer his services soon.</p>
+    </div>
+  </section>
+
+  <h3>E-Mail & Links</h3>
   <address>
     <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
-  <a href="https://www.facebook.com/roberto.sepulveda.75" target="_blank">
-    <img src="../images/fb-icon.png" alt="Facebook Icon" width="30">
-  </a>
-  <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/" target="_blank">
-    <img src="../images/linkedin-icon-.png" alt="LinkedIn Icon" width="30">
-  </a>
-  <a href="https://x.com/gilbarwaters" target="_blank">
-    <img src="../images/twitter-icon-.png" alt="Twitter Icon" width="30">
+    <a href="https://www.facebook.com/roberto.sepulveda.75" target="_blank">
+      <img src="../images/fb-icon.png" alt="Facebook Icon" width="30">
+    </a>
+    <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/" target="_blank">
+      <img src="../images/linkedin-icon-.png" alt="LinkedIn Icon" width="30">
+    </a>
+    <a href="https://x.com/gilbarwaters" target="_blank">
+      <img src="../images/twitter-icon-.png" alt="Twitter Icon" width="30">
     </a>
   </address>
-    </main>
-    <script>
-  // Load saved theme and font size on page load
-  document.addEventListener("DOMContentLoaded", function () {
-    const savedTheme = localStorage.getItem("theme");
-    const savedFont = localStorage.getItem("fontSize");
+</main>
 
-    if (savedTheme) {
-      document.body.classList.add(`${savedTheme}-mode`);
-    }
-
-    if (savedFont) {
-      document.body.classList.add(`font-${savedFont}`);
-    }
-  });
-
-  function setTheme(mode) {
-    document.body.classList.remove("light-mode", "dark-mode");
-    document.body.classList.add(`${mode}-mode`);
-    localStorage.setItem("theme", mode);  // Save selection
-  }
-
-  function setFontSize(size) {
-    document.body.classList.remove("font-small", "font-medium", "font-large");
-    document.body.classList.add(`font-${size}`);
-    localStorage.setItem("fontSize", size);  // Save selection
-  }
-
-  // Enable dropdown toggle
-  document.querySelectorAll(".dropdown > a").forEach(link => {
-    link.addEventListener("click", function (e) {
-      e.preventDefault();
-      this.parentElement.classList.toggle("open");
+<script>
+  document.querySelectorAll('.collapsible-toggle').forEach(button => {
+    button.addEventListener('click', function () {
+      this.classList.toggle('active');
+      const content = this.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
     });
   });
 </script>
-    </body>
-    </html>
+
+<style>
+  .collapsible-section {
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .collapsible-toggle {
+    background-color: #d2dbf1;
+    color: #003366;
+    cursor: pointer;
+    padding: 10px 16px;
+    width: 100%;
+    border: 1px solid #aaa;
+    text-align: left;
+    font-family: Futura, Verdana, sans-serif;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .collapsible-toggle:hover {
+    background-color: #c0d1f5;
+  }
+
+  .collapsible-content {
+    display: none;
+    padding: 10px 16px;
+    background-color: rgba(232, 238, 245, 0.3);
+    border-radius: 6px;
+    font-family: Verdana, sans-serif;
+  }
+
+  .collapsible-toggle .chevron {
+    float: right;
+    margin-top: 6px;
+    border: solid #003366;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+  }
+
+  .collapsible-toggle.active .chevron {
+    transform: rotate(135deg);
+  }
+
+  body.dark-mode .collapsible-toggle {
+    background-color: #444;
+    color: #ffffff;
+    border-color: #888;
+  }
+
+  body.dark-mode .collapsible-content {
+    background-color: rgba(60, 60, 60, 0.6);
+    color: #ffffff;
+  }
+
+  body.dark-mode .collapsible-toggle .chevron {
+    border-color: #ffffff;
+  }
+  </style>
+  </body>
+  </html>
