@@ -80,15 +80,21 @@
   </address>
     </main>
     <script>
-    // Dropdown toggles
-    document.querySelectorAll('.dropdown > a').forEach(link => {
-      link.addEventListener('click', function (e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle('open');
-      });
-    });
+    // Load theme from localStorage
+  document.addEventListener("DOMContentLoaded", function () {
+    const savedTheme = localStorage.getItem("theme");
+    const savedFont = localStorage.getItem("fontSize");
 
-    // Theme toggles
+    if (savedTheme) {
+      document.body.classList.add(`${savedTheme}-mode`);
+    }
+
+    if (savedFont) {
+      document.body.classList.add(`font-${savedFont}`);
+    }
+  });
+
+// Theme toggles
     function setTheme(mode) {
       document.body.classList.remove('light-mode', 'dark-mode');
       document.body.classList.add(`${mode}-mode`);
@@ -98,6 +104,14 @@
       document.body.classList.remove('font-small', 'font-medium', 'font-large');
       document.body.classList.add(`font-${size}`);
     }
+
+    // Dropdown toggles
+    document.querySelectorAll('.dropdown > a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      });
+    });
   </script>
     </body>
     </html>
