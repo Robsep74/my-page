@@ -11,143 +11,8 @@
             font-family: Verdana, sans-serif;
             color: #003366;
         }
-</style>
-</head>
-<body class="about-page">
-<header>
-  <a href="../info/index.html">
-  </a>
- <nav>
-      <ul class="main-nav">
-        <li><a href="/my-page/index.html">Home</a></li>
-        <li><a href="/my-page/info/about-me.html">About Me</a></li>
-        <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
-        <li class="dropdown">
-          <a href="#">Showcase<span class="chevron"></span></a>
-          <ul class="submenu">
-            <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
-            <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
-            <li><a href="/my-page/info/color-article.html">Color Article</a></li>
-            <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
-            <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
-            <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
-          </ul>
-        </li>
-        <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
-        <li><a href="/my-page/info/other-services.html">Other Services</a></li>
-        <li class="dropdown">
-          <a href="#">Theme<span class="chevron"></span></a>
-          <ul class="submenu">
-            <li><a href="#" onclick="setTheme('light')">Light Mode</a></li>
-            <li><a href="#" onclick="setTheme('dark')">Dark Mode</a></li>
-            <li><a href="#" onclick="setFontSize('small')">Font: Small</a></li>
-            <li><a href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
-            <li><a href="#" onclick="setFontSize('large')">Font: Large</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-</header>
-    <main id="about-me">
-  <h2 style="color: #003366; font-family: 'Outfit', sans-serif; font-size: 1.6rem;">"Better Call Robert"</h2>
-  <a href="../images/luis.png" target="_blank">
-    <img src="../images/luis.png" width="200" alt="My Photo">
-  </a>
 
-  <section class="collapsible-section">
-    <button class="collapsible-toggle">About the Designer <span class="chevron"></span></button>
-    <div class="collapsible-content">
-      <p>Robert Sepulveda provides Web Designing Services in the San Antonio, Texas area.</p>
-      <p>He is currently specializing in Web Design through the UTSA San Antonio online course offered by Webucator.</p>
-      <p>Mr. Sepulveda moved to San Antonio, Texas, in 1999
-        to work in the natural stone industry, where he got involved in different departments within
-        the company and developed a wealth of knowledge from customer service, sales, project management,
-        production, installation, and quality control.</p>
-    </div>
-  </section>
-
-  <section class="collapsible-section">
-    <button class="collapsible-toggle">Work Experience <span class="chevron"></span></button>
-    <div class="collapsible-content">
-      <p>Robert was also involved in the marketing department, creating brochures and promoting
-        the company's products. He is familiar with computer programs such as Power Point, GIMP, and Photoshop,
-        as well as other office-related softwares like Excel and AutoCad.</p>
-      <p><p>After deciding to pursue one of his lifelong passions in the digital world, Robert left the natural stone industry and enrolled in courses through <a href="https://www.webucator.com" target="_blank">Webucator</a> to deepen his skills. What began as a hobby in digital design evolved into a focused interest in web design — and ultimately, a new passion: web development. Today, he offers his services to established businesses and small startups alike, whether they need a brand-new website, a refresh of their current one, or support with digital advertising and design.
-      </p>
-    </div>
-  </section>
-
-  <section class="collapsible-section">
-    <button class="collapsible-toggle">Skills <span class="chevron"></span></button>
-    <div class="collapsible-content">
-      <p>In the digital space, Robert has experience producing a wide range of video content using editing software such as Filmora, iMovie, and Final Cut Pro. He offers professional video editing services and can create custom content tailored to your business needs. For advertising, he designs digital ads using tools like Photoshop, Adobe Illustrator, Keynote, and GIMP — and is now expanding into AI-powered creative workflows. He also composes background music and provides voice-over narration in both Spanish and English. Robert is well-versed in social media platforms and understands how to craft videos and ads optimized for online audiences.</p>
-    </div>
-  </section>
-
-  <h3>E-Mail & Links</h3>
-  <address>
-    <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
-    <a href="https://www.facebook.com/roberto.sepulveda.75" target="_blank">
-      <img src="../images/fb-icon.png" alt="Facebook Icon" width="30">
-    </a>
-    <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/" target="_blank">
-      <img src="../images/linkedin-icon-.png" alt="LinkedIn Icon" width="30">
-    </a>
-    <a href="https://x.com/gilbarwaters" target="_blank">
-      <img src="../images/twitter-icon-.png" alt="Twitter Icon" width="30">
-    </a>
-  </address>
-</main>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Load saved theme and font size
-    const savedTheme = localStorage.getItem("theme");
-    const savedFont = localStorage.getItem("fontSize");
-
-    if (savedTheme) {
-      document.body.classList.add(`${savedTheme}-mode`);
-    }
-
-    if (savedFont) {
-      document.body.classList.add(`font-${savedFont}`);
-    }
-
-    // Set theme
-    window.setTheme = function (mode) {
-      document.body.classList.remove("light-mode", "dark-mode");
-      document.body.classList.add(`${mode}-mode`);
-      localStorage.setItem("theme", mode);
-    };
-
-    // Set font size
-    window.setFontSize = function (size) {
-      document.body.classList.remove("font-small", "font-medium", "font-large");
-      document.body.classList.add(`font-${size}`);
-      localStorage.setItem("fontSize", size);
-    };
-
-    // Enable dropdown toggle
-    document.querySelectorAll(".dropdown > a").forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        this.parentElement.classList.toggle("open");
-      });
-    });
-
-    // Collapsible section toggles
-    document.querySelectorAll('.collapsible-toggle').forEach(button => {
-      button.addEventListener('click', function () {
-        this.classList.toggle('active');
-        const content = this.nextElementSibling;
-        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-      });
-    });
-  });
-</script>
-
-<style>
-  .collapsible-section {
+.collapsible-section {
     margin: 20px 0;
     text-align: left;
   }
@@ -208,6 +73,147 @@
   body.dark-mode .collapsible-toggle .chevron {
     border-color: #ffffff;
   }
-  </style>
+
+  .better-call {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  color: #003366;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  cursor: help;
+}
+</style>
+</head>
+<body class="about-page">
+<header>
+  <a href="../info/index.html">
+  </a>
+ <nav>
+      <ul class="main-nav">
+        <li><a href="/my-page/index.html">Home</a></li>
+        <li><a href="/my-page/info/about-me.html">About Me</a></li>
+        <li><a href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
+        <li class="dropdown">
+          <a href="#">Showcase<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
+            <li><a href="/my-page/info/color-themes.html">Color Themes</a></li>
+            <li><a href="/my-page/info/color-article.html">Color Article</a></li>
+            <li><a href="/my-page/info/typography-overview.html">Typography Overview</a></li>
+            <li><a href="/my-page/info/font-types-article.html">Font Types Article</a></li>
+            <li><a href="/my-page/info/typography-article.html">Typography Article</a></li>
+          </ul>
+        </li>
+        <li><a href="/my-page/info/my-blog.html">My Blog</a></li>
+        <li><a href="/my-page/info/other-services.html">Other Services</a></li>
+        <li class="dropdown">
+          <a href="#">Theme<span class="chevron"></span></a>
+          <ul class="submenu">
+            <li><a href="#" onclick="setTheme('light')">Light Mode</a></li>
+            <li><a href="#" onclick="setTheme('dark')">Dark Mode</a></li>
+            <li><a href="#" onclick="setFontSize('small')">Font: Small</a></li>
+            <li><a href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
+            <li><a href="#" onclick="setFontSize('large')">Font: Large</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>
+    <main id="about-me">
+  <h2 class="better-call" title="Design Advice? Better call Robert">"Better Call Robert"</h2>
+  <a href="../images/luis.png" target="_blank">
+    <img src="../images/luis.png" width="200" alt="My Photo">
+  </a>
+
+  <div class="collapsible-section">
+    <button class="collapsible-toggle">About the Designer <span class="chevron"></span></button>
+    <div class="collapsible-content">
+      <p>Robert Sepulveda provides Web Designing Services in the San Antonio, Texas area.</p>
+      <p>He is currently specializing in Web Design through the UTSA San Antonio online course offered by Webucator.</p>
+      <p>Mr. Sepulveda moved to San Antonio, Texas, in 1999
+        to work in the natural stone industry, where he got involved in different departments within
+        the company and developed a wealth of knowledge from customer service, sales, project management,
+        production, installation, and quality control.</p>
+    </div>
+  </div>
+
+  <div class="collapsible-section">
+    <button class="collapsible-toggle">Work Experience <span class="chevron"></span></button>
+    <div class="collapsible-content">
+      <p>Robert was also involved in the marketing department, creating brochures and promoting
+        the company's products. He is familiar with computer programs such as Power Point, GIMP, and Photoshop,
+        as well as other office-related softwares like Excel and AutoCad.</p>
+      <p>After deciding to pursue one of his lifelong passions in the digital world, Robert left the natural stone industry and enrolled in courses through <a href="https://www.webucator.com" target="_blank">Webucator</a> to deepen his skills. What began as a hobby in digital design evolved into a focused interest in web design — and ultimately, a new passion: web development. Today, he offers his services to established businesses and small startups alike, whether they need a brand-new website, a refresh of their current one, or support with digital advertising and design.
+      </p>
+    </div>
+  </div>
+
+  <div class="collapsible-section">
+    <button class="collapsible-toggle">Skills <span class="chevron"></span></button>
+    <div class="collapsible-content">
+      <p>In the digital space, Robert has experience producing a wide range of video content using editing software such as Filmora, iMovie, and Final Cut Pro. He offers professional video editing services and can create custom content tailored to your business needs. For advertising, he designs digital ads using tools like Photoshop, Adobe Illustrator, Keynote, and GIMP — and is now expanding into AI-powered creative workflows. He also composes background music and provides voice-over narration in both Spanish and English. Robert is well-versed in social media platforms and understands how to craft videos and ads optimized for online audiences.</p>
+    </div>
+  </div>
+
+  <h3>E-Mail & Links</h3>
+  <address>
+    <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
+    <a href="https://www.facebook.com/profile.php?id=61575908240513" target="_blank">
+      <img src="../images/fb-icon.png" alt="Facebook Icon" width="30">
+    </a>
+    <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/" target="_blank">
+      <img src="../images/linkedin-icon-.png" alt="LinkedIn Icon" width="30">
+    </a>
+    <a href="https://x.com/gilbarwaters" target="_blank">
+      <img src="../images/twitter-icon-.png" alt="Twitter Icon" width="30">
+    </a>
+  </address>
+</main>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Load saved theme and font size
+    const savedTheme = localStorage.getItem("theme");
+    const savedFont = localStorage.getItem("fontSize");
+
+    if (savedTheme) {
+      document.body.classList.add(`${savedTheme}-mode`);
+    }
+
+    if (savedFont) {
+      document.body.classList.add(`font-${savedFont}`);
+    }
+
+    // Set theme
+    window.setTheme = function (mode) {
+      document.body.classList.remove("light-mode", "dark-mode");
+      document.body.classList.add(`${mode}-mode`);
+      localStorage.setItem("theme", mode);
+    };
+
+    // Set font size
+    window.setFontSize = function (size) {
+      document.body.classList.remove("font-small", "font-medium", "font-large");
+      document.body.classList.add(`font-${size}`);
+      localStorage.setItem("fontSize", size);
+    };
+
+    // Enable dropdown toggle
+    document.querySelectorAll(".dropdown > a").forEach(link => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        this.parentElement.classList.toggle("open");
+      });
+    });
+
+    // Collapsible section toggles
+    document.querySelectorAll('.collapsible-toggle').forEach(button => {
+      button.addEventListener('click', function () {
+        this.classList.toggle('active');
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  });
+</script>
   </body>
   </html>
