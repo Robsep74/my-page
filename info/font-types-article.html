@@ -12,52 +12,58 @@
   <title>Web Design</title>
 </head>
 <body>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../images/ywd-logo.png" alt="Logo" class="navbar-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">
+  <img src="../images/ywd-logo.png" alt="Logo" class="navbar-logo">
+</a>
+    <!-- Hamburger button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="/my-page/index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="/my-page/info/about-me.html">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="showcaseDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Showcase</a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="showcaseDropdown">
-              <li><a class="dropdown-item" href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
-              <li><a class="dropdown-item" href="/my-page/info/color-themes.html">Color Themes</a></li>
-              <li><a class="dropdown-item" href="/my-page/info/color-article.html">Color Article</a></li>
-              <li><a class="dropdown-item" href="/my-page/info/typography-overview.html">Typography Overview</a></li>
-              <li><a class="dropdown-item" href="/my-page/info/font-types-article.html">Font Types Article</a></li>
-              <li><a class="dropdown-item" href="/my-page/info/typography-article.html">Typography Article</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="/my-page/info/my-blog.html">My Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="/my-page/info/other-services.html">Other Services</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Theme</a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="themeDropdown">
-              <li><a class="dropdown-item" href="#" onclick="setTheme('light')">Light Mode</a></li>
-              <li><a class="dropdown-item" href="#" onclick="setTheme('dark')">Dark Mode</a></li>
-              <li><a class="dropdown-item" href="#" onclick="setFontSize('small')">Font: Small</a></li>
-              <li><a class="dropdown-item" href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
-              <li><a class="dropdown-item" href="#" onclick="setFontSize('large')">Font: Large</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <!-- Collapsible menu -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        
+        <li class="nav-item"><a class="nav-link" href="/my-page/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/my-page/info/about-me.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="/my-page/info/my-portfolio.html">My Portfolio</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="showcaseDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Showcase</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="showcaseDropdown">
+            <li><a class="dropdown-item" href="/my-page/info/color-theory.html">Color Theory Overview</a></li>
+            <li><a class="dropdown-item" href="/my-page/info/color-themes.html">Color Themes</a></li>
+            <li><a class="dropdown-item" href="/my-page/info/color-article.html">Color Article</a></li>
+            <li><a class="dropdown-item" href="/my-page/info/typography-overview.html">Typography Overview</a></li>
+            <li><a class="dropdown-item" href="/my-page/info/font-types-article.html">Font Types Article</a></li>
+            <li><a class="dropdown-item" href="/my-page/info/typography-article.html">Typography Article</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="/my-page/info/my-blog.html">My Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/my-page/info/other-services.html">Other Services</a></li>
+
+        <!-- Optional: Theme dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Theme</a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="themeDropdown">
+            <li><a class="dropdown-item" href="#" onclick="setTheme('light')">Light Mode</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setTheme('dark')">Dark Mode</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setFontSize('small')">Font: Small</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setFontSize('medium')">Font: Medium</a></li>
+            <li><a class="dropdown-item" href="#" onclick="setFontSize('large')">Font: Large</a></li>
+          </ul>
+        </li>
+
+      </ul>
     </div>
-  </nav>
-</header>
+  </div>
+</nav>
   <main>
     <h2>Font Types Article.</h2>
 <a href="../images/adobe-font-f.png" target="_blank">
