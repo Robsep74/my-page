@@ -488,3 +488,13 @@ body.dark-mode #portfolio h4 {
   height: 60px; /* Adjust to your liking */
   object-fit: contain;
 }
+
+nav {
+  margin-top: 0;
+}
+
+.sticky-top {
+  position: sticky !important;
+  top: 0;
+  z-index: 1030;
+}
