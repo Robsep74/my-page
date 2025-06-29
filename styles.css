@@ -491,6 +491,6 @@ body.dark-mode #portfolio h4 {
   object-fit: contain;
 }
 
-body {
+main {
   padding-top: 4rem; /* or whatever matches your navbar height */
 }
