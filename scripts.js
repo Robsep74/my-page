@@ -43,3 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carousel = document.querySelector('#portfolioCarousel');
+
+  if (carousel) {
+    carousel.addEventListener('slide.bs.carousel', function () {
+      const videos = carousel.querySelectorAll('video');
+      videos.forEach(video => {
+        video.pause();
+        video.currentTime = 0; // Rewind to start (optional)
+      });
+    });
+  }
+});
+
