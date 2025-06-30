@@ -49,7 +49,10 @@ main {
   color: #003366;
 }
 
-nav {
+nav.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
   font-family: Verdana, Geneva, sans-serif;
   width: 100%;
   background-color: rgba(196, 211, 243, 0.6);
@@ -57,8 +60,8 @@ nav {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
   border-bottom: 2px solid #9fa2ab;
- 
 }
+
 
 
 nav ul {
@@ -492,10 +495,3 @@ body.dark-mode #portfolio h4 {
 nav {
   margin-top: 0;
 }
-
-.sticky-top {
-  position: sticky !important;
-  top: 0;
-  z-index: 1030;
-}
-
