@@ -21,12 +21,13 @@ main {
   background: rgba(232, 238, 245, 0.6);
   width: 98%;
   max-width: 800px; 
-  margin: 30px auto; 
-  padding: 4rem 20px 20px 20px; /* top right bottom left */
+  margin: 30px auto;
+  padding: 80px 20px 20px 20px; /* top right bottom left */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
   text-align: center; 
 }
+
 
 .custom-welcome {
   font-family: "Outfit", sans-serif;
@@ -497,3 +498,4 @@ nav {
   top: 0;
   z-index: 1030;
 }
+
