@@ -12,7 +12,7 @@ header, nav {
 }
 
 body {
-  background-image: url('images/robbie-ross.jpg');
+  background-image: url('images/bg-gray.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -498,5 +498,92 @@ nav {
 
 body {
   padding-top: 70px;
+}
+
+#why-page .carousel-image {
+  background: rgba(255, 255, 255, 0.2); /* subtle white translucent background */
+  padding: 20px;                        /* space inside the frame */
+  border-radius: 12px;                  /* smooth rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* gentle shadow for depth */
+  margin: 0 auto;
+  width: fit-content;
+}
+
+#why-page .carousel-caption-static {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 60%;
+  margin: 20px auto 0;
+  text-align: center;
+  
+}
+
+/* DARK MODE for carousel captions */
+#why-page.dark-mode .carousel-caption-static {
+  background-color: rgba(0, 0, 0, 0.7); /* darker background */
+  color: #ffffff;
+}
+
+/* DARK MODE for image frame */
+#why-page.dark-mode .carousel-image {
+  background-color: rgba(255, 255, 255, 0.1); /* lighter translucent frame */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: lighten the carousel controls too */
+#why-page.dark-mode .carousel-control-prev-icon,
+#why-page.dark-mode .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#why-page.dark-mode h5,
+#why-page.dark-mode p {
+  color: #ffffff !important;
+}
+
+.btn-primary.rounded-pill {
+  background-color: #004080;
+  border: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary.rounded-pill:hover {
+  background-color: #0066cc;
+}
+
+/* Only on the homepage */
+#home-page .custom-welcome {
+  text-decoration: none;
+  color: #004080; /* dark blue */
+}
+
+#home-page .inline-logo {
+  height: 1.2em;
+  vertical-align: middle;
+}
+
+#home-page.dark-mode .custom-welcome {
+  color: #ffffff;
+}
+
+#home-page .inline-logo {
+  height: 64px; 
+  width: auto; /* Maintain original aspect ratio */
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 

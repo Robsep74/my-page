@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="normalize.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="normalize.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <link href="styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Poiret+One&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="images/favicon.png">
   <title>Web Design</title>
 </head>
-<body>
+<body id="home-page">
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="info/index.html">
@@ -46,8 +46,11 @@
 
         <li class="nav-item"><a class="nav-link" href="/my-page/info/my-blog.html">My Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="/my-page/info/other-services.html">Other Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/my-page/info/why-work-with-me.html">Why Work With Me</a>
+       </li>
+ 
 
-        <!-- Optional: Theme dropdown -->
+        <!-- Theme dropdown -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">Theme</a>
@@ -64,49 +67,55 @@
   </div>
 </nav>
  <main>
-    <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo" /> Your Web Design Services</span></p>
+    <p><span class="custom-welcome">Welcome to <img src="images/ywd-logo.png" alt="Logo" class="inline-logo"> Your Web Design Services</span></p>
 
     <section id="about-me">
-      <h3>Creative Website Designs</h3>
-      <img src="images/web-design-pic.jpeg" width="700" alt="My Photo" />
+      <h4>Creative Website Designs</h4>
+      <img src="images/web-design-pic.jpeg" width="700" alt="My Photo">
       <p>Crafting clean, modern websites tailored to your vision. Your brand deserves a beautiful online home — let's build it. <a href="info/about-me.html">Read more...</a></p>
-<div class="d-flex justify-content-center gap-3 mt-3">
-  <a href="info/about-me.html" class="btn btn-primary">Learn More</a>
-  <a href="mailto:tucco74@gmail.com" class="btn btn-outline-secondary">Contact Me</a>
+<div class="d-flex justify-content-center gap-3 mt-4 mb-2">
+  <a href="info/about-me.html" class="btn btn-outline-primary">Learn More</a>
 </div>
 
 
       <article id="my-portfolio">
-        <h2>My Portfolio</h2>
-        <a href="info/my-portfolio.html"><img src="images/collage-images.png" width="600" alt="Portfolio Image" /></a>
-        <p>Here you can see some of my work in Web Design, Social Media Ads... <a href="./info/my-portfolio.html">Read more...</a></p>
+        <h2 class="visually-hidden">Portfolio</h2> 
+        <a href="info/my-portfolio.html"><img src="images/collage-images.png" width="600" alt="Portfolio Image"></a>
+        <p>Here you can see some of my work in Web Design, Social Media Ads... <a href="info/my-portfolio.html">Read more...</a></p>
       </article>
     </section>
 
-    <h2>Other Services</h2>
+   <div class="d-flex justify-content-center flex-wrap gap-3 my-4">
+  <a href="/my-page/info/other-services.html" class="btn btn-outline-primary">Other Services</a>
+<a href="/my-page/info/my-blog.html" class="btn btn-outline-secondary">My Blog</a>
+  <a href="mailto:tucco74@gmail.com" class="btn btn-outline-dark">Contact Me</a>
+</div>
+
+    <div id="other-services">
     <p>Besides Web Design, I also provide the following services:</p>
     <ol>
       <li><strong>Social Media Advertisement.</strong></li>
       <li><strong>Professional Video Editing & Translation.</strong></li>
       <li><strong>Old Photograph Restoration.</strong></li>
     </ol>
+    </div>
 
-    <aside>
-      <h3>My Blog</h3>
-      <p>Check out my Blog with interesting information about my projects and more.</p>
-      <h4>Coming Soon!</h4>
-    </aside>
+
+   <aside id="my-blog">
+  <p>Check out my Blog with interesting information about my projects and more.</p>
+  <h4>Coming Soon!</h4>
+</aside>
   </main>
 
   <footer>
-    <p>&copy; 2024 Web Design Services. All rights reserved.</p>
     <h3>E-Mail & Links</h3>
     <address>
       <a href="mailto:tucco74@gmail.com">tucco74@gmail.com</a>
-      <a href="https://www.facebook.com/profile.php?id=61575908240513"><img src="images/fb-icon.png" alt="Facebook Icon" /></a>
-      <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/"><img src="images/linkedin-icon-.png" alt="LinkedIn Icon" /></a>
-      <a href="https://x.com/gilbarwaters"><img src="images/twitter-icon-.png" alt="Twitter Icon" /></a>
+      <a href="https://www.facebook.com/profile.php?id=61575908240513"><img src="images/fb-icon.png" alt="Facebook Icon"></a>
+      <a href="https://www.linkedin.com/in/rob-sepulveda-2b2266303/"><img src="images/linkedin-icon-.png" alt="LinkedIn Icon"></a>
+      <a href="https://x.com/gilbarwaters"><img src="images/twitter-icon-.png" alt="Twitter Icon"></a>
     </address>
+    <p>&copy; 2024 Web Design Services. All rights reserved.</p>
   </footer>
 <script src="scripts.js"></script>
 </body>
